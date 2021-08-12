@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Raleway Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./fonts/Raleway/Raleway-Bold.woff2) format('woff2'), url(./fonts/Raleway/Raleway-Bold.woff) format('woff'), url(./fonts/Raleway/Raleway-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway Light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(./fonts/Raleway/Raleway-Light.woff2) format('woff2'), url(./fonts/Raleway/Raleway-Light.woff) format('woff'), url(./fonts/Raleway/Raleway-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway Heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(./fonts/Raleway/Raleway-Heavy.woff2) format('woff2'), url(./fonts/Raleway/Raleway-Heavy.woff) format('woff'), url(./fonts/Raleway/Raleway-Heavy.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #b07cf7;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.blog {
+    margin: 100px 0;
+}
+
+.blog-top {
+    text-align: center;
+}
+
+.blog-top-title {
+    font-family: 'Raleway Bold', sans-serif;
+    font-size: 90px;
+    line-height: 92px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.blog-top-text {
+    font-family: 'Raleway Light', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    max-width: 570px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.blog-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.blog-bottom-item {
+    width: 31.5%;
+    padding: 30px 20px 24px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.blog-bottom-item:hover .blog-bottom-title {
+    text-decoration: underline;
+}
+
+.blog-bottom-item:hover .time {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.time {
+    display: inline-block;
+    margin: 0 0 130px 0;
+    padding: 3px 0;
+    max-width: 60px;
+    min-height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all .2s linear;
+}
+
+.blog-day {
+    font-family: 'Raleway Bold', sans-serif;
+    font-size: 32px;
+    line-height: 28px;
+    color: rgb(255, 255, 255);
+}
+
+.blog-month {
+    font-family: 'Raleway Heavy', sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    color: rgb(255, 255, 255);
+}
+
+.blog-bottom-title {
+    font-family: 'Raleway Bold', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.blog-bottom-text {
+    font-family: 'Raleway Light', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+}
+
+.image-left {
+    background-image: url(./image/smoothies.jpg);
+}
+
+.image-center {
+    background-image: url(./image/soup.jpg);
+}
+
+.image-right {
+    background-image: url(./image/berries.jpg);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-button {
+    font-family: 'Raleway Light', sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+    background-color: #f72b3b;
+    padding: 17px 44px;
+    border: 0;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.blog-button:hover {
+    opacity: .7;
+}
